@@ -30,7 +30,7 @@ dag = DAG(
 inventory_items_table_op = CreateTableFromSheetOperator(
     schema_name='jeff',
     table_name='inventory_items',
-    sheet_id='1DlAZRHui1DyLNmHiN-eJDKiC83VwBIavM7OgqsVEF1E',
+    sheet_id='enter-your-sheet-id',
     column_types={'product_id': 'integer'},
     default_column_type='varchar',
     dag=dag
@@ -39,7 +39,7 @@ inventory_items_table_op = CreateTableFromSheetOperator(
 inventory_cost_table_op = CreateTableFromSheetOperator(
     schema_name='jeff',
     table_name='inventory_cost_info',
-    sheet_id='18hFmIcOB7w8xH2NjyTtH5_rSh_fSxjbWnuWeIrSx50Q',
+    sheet_id='enter-your-sheet-id',
     column_types={'period': 'date'},
     default_column_type='numeric(10,2)',
     dag=dag
@@ -48,7 +48,7 @@ inventory_cost_table_op = CreateTableFromSheetOperator(
 baking_cost_table_op = CreateTableFromSheetOperator(
     schema_name='jeff',
     table_name='baking_cost_info',
-    sheet_id='1Ofmz4IKaymDMAhZMW3YN9jL7hgoA2gHUZopNtLclk8I',
+    sheet_id='enter-your-sheet-id',
     column_types={
         'period': 'date',
         'bakery': 'varchar(32)'},
@@ -59,7 +59,7 @@ baking_cost_table_op = CreateTableFromSheetOperator(
 orders_table_op = CreateTableFromSheetOperator(
     schema_name='jeff',
     table_name='bakery_orders',
-    sheet_id='1by8HYVcWOFzePlWto6ftKUfiRLRyNI6IHsdEg-f6Zcg',
+    sheet_id='enter-your-sheet-id',
     column_types={
         'period': 'date',
         'bakery': 'varchar(32)',
